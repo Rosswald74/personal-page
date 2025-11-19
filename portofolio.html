@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rosswald — Bio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero" id="home">
+      <div class="hero-left" aria-hidden="true"></div>
+      <!-- Image Background di kiri homepage-->
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video
+          class="hero-video"
+          src="video/iwagvidio.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+        <span class="hero-video-overlay" aria-hidden="true"></span>
+      </div>
+      <div class="hero-right">
+        <div class="intro-wrap">
+          <p class="small">Hi! I'm</p>
+          <h1 class="name">Rosswald</h1>
+          <p class="sub">Illustrator · Fursuiter · Content Creator</p>
+        </div>
+        <div class="panel">
+          <div class="cards">
+            <div class="card card-events">
+              <h4 class="card-title">Latest events attended</h4>
+              <div class="thumb-wrap">
+                <button class="thumb-arrow prev" aria-label="previous event">
+                  ‹
+                </button>
+                <img
+                  id="eventImg"
+                  src="image/event1.jpg"
+                  alt="event thumbnail"
+                />
+                <button class="thumb-arrow next" aria-label="next event">
+                  ›
+                </button>
+              </div>
+            </div>
+            <div class="card card-coming">
+              <h4 class="card-title">Coming Soon</h4>
+              <div class="thumb-wrap simple">
+                <button class="thumb-arrow prev" aria-label="previous event">
+                  ‹
+                </button>
+                <img
+                  id="comingImg"
+                  src="image/logosoon1.jpg"
+                  alt="coming soon"
+                />
+                <button class="thumb-arrow next" aria-label="next event">
+                  ›
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary" id="artworkBtn" href="#artwork">
+              Artwork
+            </button>
+            <button class="btn btn-secondary" id="furmeetBtn" href="#furmeet">
+              Furmeet
+            </button>
+          </div>
+        </div>
+
+        <div class="findme">
+          <span class="find-label">Find me at :</span>
+          <div class="icons">
+            <a
+              class="icon icon-fb"
+              aria-label="facebook"
+              target="_blank"
+              rel="noopener"
+              href="https://www.facebook.com/Rosswald.74"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.3v-2.9h2.3V9.1c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .07 2 .07v2.2h-1.1c-1 0-1.3.6-1.3 1.2v1.5h2.2l-.35 2.9h-1.85v7A10 10 0 0 0 22 12z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="icon icon-ig"
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener"
+              href="https://www.instagram.com/rosswaldd/"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zM12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 1 0 12 7.3zM17.6 6.3a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="icon icon-x"
+              aria-label="x"
+              target="_blank"
+              rel="noopener"
+              href="https://x.com/rosswald74"
+            >
+              <img src="image/sosmed3.png" alt="sosial x" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Furmeet section -->
+    <section class="furmeet-section">
+      <div id="furmeet" class="furmeet">
+        <div class="furmeet-left">
+          <h2 class="furmeet-title">Furmeet? Ayok-</h2>
+          <p class="furmeet-desc">
+            Bergabung dengan komunitas untuk ketemu, berkarya, dan berbagi
+            pengalaman seputar fandom. Furmeet adalah wadah santai untuk
+            berkumpul, bertukar ide, dan menikmati acara bersama teman-teman
+            yang sehobi.
+          </p>
+          <div class="furmeet-right">
+            <div class="furmeet-tabs" role="tablist" aria-label="Furmeet tabs">
+              <button
+                class="tab-btn active"
+                data-tab="photos"
+                role="tab"
+                aria-selected="true"
+              >
+                Photos
+              </button>
+              <button
+                class="tab-btn"
+                data-tab="videos"
+                role="tab"
+                aria-selected="false"
+              >
+                Videos
+              </button>
+            </div>
+
+            <div class="tab-panels">
+              <div class="tab-panel tab-photos active" data-tab="photos">
+                <div class="furmeet-gallery" aria-live="polite">
+                  <img
+                    src="image/foto1.jpg"
+                    alt="Furmeet photo 1"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto2.jpg"
+                    alt="Furmeet photo 2"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto3.jpg"
+                    alt="Furmeet photo 3"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto4.jpg"
+                    alt="Furmeet photo 4"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto5.jpg"
+                    alt="Furmeet photo 5"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto6.jpg"
+                    alt="Furmeet photo 6"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto7.jpg"
+                    alt="Furmeet photo 7"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto8.jpg"
+                    alt="Furmeet photo 8"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto9.jpg"
+                    alt="Furmeet photo 9"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto10.jpg"
+                    alt="Furmeet photo 10"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto11.jpg"
+                    alt="Furmeet photo 11"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto12.jpg"
+                    alt="Furmeet photo 12"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto13.jpg"
+                    alt="Furmeet photo 13"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto14.jpg"
+                    alt="Furmeet photo 14"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto15.jpg"
+                    alt="Furmeet photo 15"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto16.jpg"
+                    alt="Furmeet photo 16"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto17.jpg"
+                    alt="Furmeet photo 17"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto18.jpg"
+                    alt="Furmeet photo 18"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto19.jpg"
+                    alt="Furmeet photo 19"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto20.jpg"
+                    alt="Furmeet photo 20"
+                    loading="lazy"
+                  />
+                  <img
+                    src="image/foto21.png"
+                    alt="Furmeet photo 21"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="tab-panel tab-videos" data-tab="videos" hidden>
+                <div class="furmeet-videos">
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/iwagvidio.mp4"
+                    aria-label="Video: iwagvidio"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/iwagvidio.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio1.mp4"
+                    aria-label="Video 1"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio1.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio2.mp4"
+                    aria-label="Video 2"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio2.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio3.mp4"
+                    aria-label="Video 3"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio4.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio5.mp4"
+                    aria-label="Video 5"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio5.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio6.mp4"
+                    aria-label="Video 6"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio6.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio7.mp4"
+                    aria-label="Video 7"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio7.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio8.mp4"
+                    aria-label="Video 8"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio8.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidio9.mp4"
+                    aria-label="Video 9"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidio9.mp4"
+                    ></video>
+                  </div>
+                  <div
+                    class="video-thumb"
+                    tabindex="0"
+                    data-src="video/vidiocomipara.mp4"
+                    aria-label="Vidiocomipara"
+                  >
+                    <video
+                      muted
+                      preload="metadata"
+                      playsinline
+                      src="video/vidiocomipara.mp4"
+                    ></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Artwork section -->
+    <section class="artwork-section" id="artwork">
+      <div class="artwork">
+        <!-- Top container: left author image + right title/desc/tabs -->
+        <div class="artwork-top">
+          <div class="artwork-left">
+            <div class="author-card">
+              <img
+                src="image/ss.png"
+                alt="Rosswald portrait"
+                class="author-portrait"
+              />
+              <div class="author-overlay" aria-label="Author identity">
+                <div class="author-name">Rosswald</div>
+                <div class="author-role">Illustrator</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="artwork-right">
+            <h2 class="artwork-title">Artwork</h2>
+            <p class="artwork-desc">Kumpulan ilustrasi dan karya visual —</p>
+            <!-- Artwork tabs: Illustration / Character Sheet / Reference Sheet -->
+            <div class="artwork-tabs-wrap">
+              <div
+                class="artwork-tabs"
+                role="tablist"
+                aria-label="Artwork tabs"
+              >
+                <button
+                  class="art-tab-btn active"
+                  data-tab="illustration"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Illustration
+                </button>
+                <button
+                  class="art-tab-btn"
+                  data-tab="character"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Character Sheet
+                </button>
+                <button
+                  class="art-tab-btn"
+                  data-tab="reference"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  Reference Sheet
+                </button>
+                <div class="sketch-toggle">
+                  <button
+                    class="art-tab-btn"
+                    data-tab="sketches"
+                    role="tab"
+                    aria-selected="false"
+                  >
+                    Sketches
+                  </button>
+                  <!-- Sketches dropdown (hidden by default) -->
+                  <div class="sketch-dropdown" aria-hidden="true" role="menu">
+                    <button
+                      class="tab-btn active"
+                      data-tab="digital"
+                      role="menuitem"
+                    >
+                      Digital
+                    </button>
+                    <button
+                      class="tab-btn"
+                      data-tab="traditional"
+                      role="menuitem"
+                    >
+                      Traditional
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom container: gallery showcase that changes per selected tab -->
+        <div class="artwork-bottom">
+          <div class="artwork-tab-panels">
+            <div
+              class="artwork-tab-panel artwork-illustration active"
+              data-tab="illustration"
+            >
+              <div class="artwork-gallery" aria-live="polite">
+                <img src="image/gambar1.png" alt="Artwork 1" loading="lazy" />
+                <img src="image/gambar2.png" alt="Artwork 2" loading="lazy" />
+              </div>
+            </div>
+            <div
+              class="artwork-tab-panel artwork-character"
+              data-tab="character"
+              hidden
+            >
+              <div class="artwork-gallery">
+                <img
+                  src="image/gambar3.png"
+                  alt="Character Sheet 1"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div
+              class="artwork-tab-panel artwork-reference"
+              data-tab="reference"
+              hidden
+            >
+              <div class="artwork-gallery">
+                <img
+                  src="image/gambar4.png"
+                  alt="Reference Sheet 1"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div
+              class="artwork-tab-panel artwork-sketches"
+              data-tab="sketches"
+              hidden
+            >
+              <div class="sketch-panels">
+                <div
+                  class="sketch-panel sketch-digital active"
+                  data-tab="digital"
+                >
+                  <div class="artwork-gallery">
+                    <img
+                      src="image/sketch1.jpg"
+                      alt="Sketch 1"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch2.png"
+                      alt="Sketch 2"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch3.png"
+                      alt="Sketch 3"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch4.png"
+                      alt="Sketch 4"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch5.png"
+                      alt="Sketch 5"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch6.png"
+                      alt="Sketch 6"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketch7.png"
+                      alt="Sketch 7"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  class="sketch-panel sketch-traditional"
+                  data-tab="traditional"
+                  hidden
+                >
+                  <div class="artwork-gallery">
+                    <img
+                      src="image/sketches1.jpg"
+                      alt="Traditional Sketch 1"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketches2.jpg"
+                      alt="Traditional Sketch 2"
+                      loading="lazy"
+                    />
+                    <img
+                      src="image/sketches3.jpg"
+                      alt="Traditional Sketch 3"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="f-left">
+          <img
+            src="image/ss.png"
+            alt="Rosswald portrait"
+            class="footer-portrait"
+          />
+          <div>
+            <div class="brand">Rosswald</div>
+            <div class="brand-sub">Illustrator · Fursuiter</div>
+          </div>
+        </div>
+
+        <div class="f-right">
+          <div class="footer-bottom">© 2025 Rosswald · All rights reserved</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox for images and videos on homepage slider-->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close></div>
+      <div class="lightbox-content" role="dialog" aria-modal="true">
+        <img id="lightboxImg" src="" alt="" style="display: block" />
+        <video
+          id="lightboxVideo"
+          controls
+          playsinline
+          style="display: none; max-width: 85vw; max-height: 85vh"
+        ></video>
+        <button class="lightbox-close" aria-label="Close">✕</button>
+      </div>
+    </div>
+
+    <button id="goto-home" class="goto-home" aria-label="Go to homepage">
+      <img src="image/iconnavigasihome.png" alt="Home" class="goto-home-icon" />
+    </button>
+
+    <img src="image/icon.png" alt="icon" class="floating-icon" />
+    <img src="image/icon.png" alt="icon" class="floating-icon" />
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
